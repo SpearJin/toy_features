@@ -11,7 +11,10 @@ slideBtn.addEventListener('click', (e) => {
   if (e.target === e.currentTarget) {
     return;
   }
-  if (e.target.className.includes('next')) {
+  console.log(angle);
+  const target = e.target.closest('.btn');
+  if (target.className.includes('next')) {
+    console.log('next');
     angle -= 45;
     slideCards.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
   } else {
