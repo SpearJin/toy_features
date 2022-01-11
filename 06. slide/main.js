@@ -4,17 +4,15 @@ const slide = document.querySelector('.slide');
 const slideCards = document.querySelector('.slide_cards');
 const slideBtn = document.querySelector('.slide_btns');
 let angle = 0;
-
+let currentAngle = 0;
 const cardImgs = ['img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8'];
 
 slideBtn.addEventListener('click', (e) => {
   if (e.target === e.currentTarget) {
     return;
   }
-  console.log(angle);
   const target = e.target.closest('.btn');
   if (target.className.includes('next')) {
-    console.log('next');
     angle -= 45;
     slideCards.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
   } else {
