@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #8460ed, #ff1252);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: 1s;
+}
+
+.toggle:hover {
+  opacity: 0.8;
+}
+
+.menu.active .toggle {
+  transform: rotate(315deg);
+}
+
+.list {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.list-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s;
+  transform-origin: 20vw;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.menu.active .list-item {
+  top: 35%;
+  left: 10%;
+  transform: rotate(calc(360deg / 7 * var(--i)));
+}
+
+.item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 4em;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.menu.active .item-link {
+  opacity: 1;
+  transform: rotate(calc(360deg / -7 * var(--i)));
+}
