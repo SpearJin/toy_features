@@ -1,0 +1,21 @@
+{
+  "name": "toy_feature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpearJin/toy_features.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpearJin/toy_features/issues"
+  },
+  "homepage": "https://github.com/SpearJin/toy_features#readme",
+  "type": "module"
+}

@@ -1,11 +1,22 @@
 'use strict';
 
-const $steper = document.querySelector('.steper');
-const $steperCount = document.querySelector('.steper_count');
+const $stepper = document.createElement('div');
+$stepper.className = 'stepper';
+
+$stepper.innerHTML = `
+    <div class="stepper_container">
+      <button class="steper_btn btn-minues">-</button>
+      <span class="steper_count">5</span>
+      <button class="steper_btn btn-plus">+</button>
+    </div>
+  `;
+
+// const $steper = document.querySelector('.steper');
+const $steperCount = $stepper.querySelector('.steper_count');
 let countValue = Number($steperCount.textContent);
 // steperCount의 value값은 string이므로 number타입으로 변환함
 
-$steper.addEventListener('click', (e) => {
+$stepper.addEventListener('click', (e) => {
   const target = e.target;
   const selected = target.className.split(' ');
   // target에 class이름이 여러개이면 배열로 재정의함
@@ -17,3 +28,5 @@ $steper.addEventListener('click', (e) => {
   }
   $steperCount.textContent = countValue;
 });
+
+export default $stepper;

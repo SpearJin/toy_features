@@ -1,8 +1,39 @@
 'use strict';
 
-const navbarList = document.querySelector('.navbar_list');
+const $navbar = document.createElement('navbar');
+$navbar.className = 'navbar';
 
-navbarList.addEventListener('click', (e) => {
+$navbar.innerHTML = `
+  <div class="navbar_container">
+    <ul class="navbar_list">
+      <li class="navbar_list_item active">
+        <ion-icon class="item_icon" name="home-outline"></ion-icon>
+        <span class="item_title">Home</span>
+      </li>
+      <li class="navbar_list_item">
+        <ion-icon class="item_icon" name="person-outline"></ion-icon>
+        <span class="item_title">Profile</span>
+      </li>
+      <li class="navbar_list_item">
+        <ion-icon class="item_icon" name="chatbox-outline"></ion-icon>
+        <span class="item_title">Message</span>
+      </li>
+      <li class="navbar_list_item">
+        <ion-icon class="item_icon" name="camera-outline"></ion-icon>
+        <span class="item_title">Camera</span>
+      </li>
+      <li class="navbar_list_item">
+        <ion-icon class="item_icon" name="settings-outline"></ion-icon>
+        <span class="item_title">Setting</span>
+      </li>
+      <div class="selected"></div>
+    </ul>
+  </div>
+`;
+
+const $navbarList = document.querySelector('.navbar_list');
+
+$navbar.addEventListener('click', (e) => {
   if (e.target.nodeName === 'UL') {
     return;
   }
@@ -19,3 +50,5 @@ navbarList.addEventListener('click', (e) => {
   active.classList.remove('active');
   target.classList.add('active');
 });
+
+export default $navbar;
