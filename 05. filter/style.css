@@ -11,6 +11,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 80px 0;
+  background-color: #000;
+}
+
+.gallery_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gallery_title {

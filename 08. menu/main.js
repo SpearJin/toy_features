@@ -2,6 +2,8 @@
 import Stepper from '../01. steper/main.js';
 import Navbar from '../02. navbar/main.js';
 import DropMenu from '../03. dropMenu/main.js';
+import SideBar from '../04. sidebarMenu/main.js';
+import Filter from '../05. filter/main.js';
 
 const $menu = document.createElement('div');
 $menu.className = 'menu';
@@ -26,12 +28,12 @@ $menu.innerHTML = `
           <ion-icon name="settings-outline"></ion-icon>
         </a>
       </li>
-      <li class="list-item" style="--i: 3">
+      <li class="list-item" style="--i: 3" data-menu="SideBar">
         <a href="#" class="item-link">
           <ion-icon name="mail-outline"></ion-icon>
         </a>
       </li>
-      <li class="list-item" style="--i: 4">
+      <li class="list-item" style="--i: 4" data-menu="Filter">
         <a href="#" class="item-link">
           <ion-icon name="key-outline"></ion-icon>
         </a>
@@ -62,10 +64,19 @@ $menu.querySelector('.list').addEventListener('click', (e) => {
   switch (target.dataset.menu) {
     case 'Stepper':
       changePage(Stepper);
+      return;
     case 'Navbar':
       changePage(Navbar);
+      return;
     case 'DropMenu':
       changePage(DropMenu);
+      return;
+    case 'SideBar':
+      changePage(SideBar);
+      return;
+    case 'Filter':
+      changePage(Filter);
+      return;
   }
 });
 

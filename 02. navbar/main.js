@@ -26,14 +26,14 @@ $navbar.innerHTML = `
         <ion-icon class="item_icon" name="settings-outline"></ion-icon>
         <span class="item_title">Setting</span>
       </li>
-      <div class="selected"></div>
+      <div class="navbar_list_selected"></div>
     </ul>
   </div>
 `;
 
-const $navbarList = document.querySelector('.navbar_list');
+const $navbarList = $navbar.querySelector('.navbar_list');
 
-$navbar.addEventListener('click', (e) => {
+$navbarList.addEventListener('click', (e) => {
   if (e.target.nodeName === 'UL') {
     return;
   }
