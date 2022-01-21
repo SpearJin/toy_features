@@ -4,6 +4,8 @@ import Navbar from '../02. navbar/main.js';
 import DropMenu from '../03. dropMenu/main.js';
 import SideBar from '../04. sidebarMenu/main.js';
 import Filter from '../05. filter/main.js';
+import Slide from '../06. slide/main.js';
+import Parallax from '../07. parallax/main.js';
 
 const $menu = document.createElement('div');
 $menu.className = 'menu';
@@ -38,19 +40,19 @@ $menu.innerHTML = `
           <ion-icon name="key-outline"></ion-icon>
         </a>
       </li>
-      <li class="list-item" style="--i: 5">
+      <li class="list-item" style="--i: 5" data-menu="Slide">
         <a href="#" class="item-link">
           <ion-icon name="videocam-outline"></ion-icon>
         </a>
       </li>
-      <li class="list-item" style="--i: 6">
+      <li class="list-item" style="--i: 6" data-menu="Parallax">
         <a href="#" class="item-link">
           <ion-icon name="camera-outline"></ion-icon>
         </a>
       </li>
     </ul>
   </div>
-  `;
+`;
 const $toogle = $menu.querySelector('.toggle');
 
 $toogle.addEventListener('click', () => {
@@ -76,6 +78,12 @@ $menu.querySelector('.list').addEventListener('click', (e) => {
       return;
     case 'Filter':
       changePage(Filter);
+      return;
+    case 'Slide':
+      changePage(Slide);
+      return;
+    case 'Parallax':
+      changePage(Parallax);
       return;
   }
 });
