@@ -16,11 +16,11 @@ $parallax.innerHTML = `
     <img src="../07. parallax/image/moon.png" class="moon" />
     <img src="../07. parallax/image/mountains_behind.png" class="mountains_behind" />
     <h2 class="text">Moon Light</h2>
-    <a href="#sec" class="btn">Exploer</a>
+    <a class="parallax_btn">설명</a>
     <img src="../07. parallax/image/mountains_front.png" class="mountains_front" />
   </section>
   <div class="sec" class="sec">
-  <h2>Parallax Scrolling Effects</h2>
+  <h2 class="parallax_description_title">Parallax Scrolling Effects</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, reiciendis! Deserunt, atque laboriosam.
     Nesciunt quis vel excepturi praesentium rem exercitationem perspiciatis provident autem quam pariatur
@@ -58,11 +58,16 @@ $parallax.innerHTML = `
 </div>
 `;
 
-let $stars = $parallax.querySelector('.stars');
-let $moon = $parallax.querySelector('.moon');
-let $mountains_behind = $parallax.querySelector('.mountains_behind');
-let $text = $parallax.querySelector('.text');
-let $btn = $parallax.querySelector('.btn');
+const $stars = $parallax.querySelector('.stars');
+const $moon = $parallax.querySelector('.moon');
+const $mountains_behind = $parallax.querySelector('.mountains_behind');
+const $text = $parallax.querySelector('.text');
+const $btn = $parallax.querySelector('.parallax_btn');
+const $title = $parallax.querySelector('.parallax_description_title');
+
+$btn.addEventListener('click', () => {
+  $title.scrollIntoView({ behavior: 'smooth' });
+});
 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;

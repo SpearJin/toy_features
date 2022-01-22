@@ -87,7 +87,7 @@
   z-index: 9;
 }
 
-.btn {
+.parallax_btn {
   display: inline-block;
   width: 100px;
   padding: 8px 10px;
@@ -96,6 +96,10 @@
   color: #2b1055;
   font-size: 1.5em;
   text-decoration: none;
+  text-align: center;
+  letter-spacing: 4px;
+  cursor: pointer;
+  z-index: 100;
   transform: translateY(100px);
 }
 
@@ -105,7 +109,7 @@
   background: #1c0522;
 }
 
-.sec h2 {
+.parallax_description_title {
   margin-bottom: 10px;
   color: #fff;
   font-size: 3.5em;
