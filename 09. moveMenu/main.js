@@ -6,7 +6,7 @@ $moveBtn.className = 'move_menu';
 
 $moveBtn.innerHTML = `
   <button class="move_menu_btn">
-    뒤로
+    Home
   </button>
 `;
 
