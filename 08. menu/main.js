@@ -12,7 +12,7 @@ const $menu = document.createElement('div');
 $menu.className = 'menu';
 $menu.innerHTML = `
   <div class="menu_container">
-    <h1 class="menu_title">SpearJin의 ToyProject</h1>
+    <h1 class="menu_title">SpearJin ToyProject</h1>
     <div class="toggle">
       <ion-icon name="add-outline"></ion-icon>
     </div>

@@ -32,6 +32,7 @@ $slideBtn.addEventListener('click', (e) => {
     return;
   }
   const target = e.target.closest('.btn');
+  console.log('slide', target);
   if (target.className.includes('next')) {
     angle -= 45;
     $slideCards.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
