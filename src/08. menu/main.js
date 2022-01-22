@@ -1,5 +1,5 @@
 'use strict';
-import Stepper from '../01. steper/main.js';
+import Stepper from '../01. stepper/main.js';
 import Navbar from '../02. navbar/main.js';
 import DropMenu from '../03. dropMenu/main.js';
 import SideBar from '../04. sidebarMenu/main.js';
