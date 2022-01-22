@@ -81,7 +81,9 @@ body {
   height: 120px;
   border-radius: 50%;
   background: #fff;
-  font-size: 4em;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
   opacity: 0;
   transition: 1.5s;
 }

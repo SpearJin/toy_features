@@ -11,10 +11,8 @@ $slide.innerHTML = `
           <span>
             <i class="fas fa-arrow-left"></i>
           </span>
-          <span>Preview</span>
         </button>
         <button class="btn next">
-          <span>Next</span>
           <span>
             <i class="fas fa-arrow-right"></i>
           </span>

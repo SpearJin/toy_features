@@ -17,37 +17,39 @@ $menu.innerHTML = `
     <ul class="list">
       <li class="list-item" style="--i: 0" data-menu="Stepper">
         <a href="#" class="item-link">
-          <ion-icon name="home-outline">Stepper</ion-icon>
+          Stepper
         </a>
       </li>
       <li class="list-item" style="--i: 1" data-menu="Navbar">
         <a href="#" class="item-link">
-          <ion-icon name="person-outline"></ion-icon>
+          Navbar
         </a>
       </li>
       <li class="list-item" style="--i: 2" data-menu="DropMenu">
         <a href="#" class="item-link">
-          <ion-icon name="settings-outline"></ion-icon>
+          Drop<br/>
+          Menu
         </a>
       </li>
       <li class="list-item" style="--i: 3" data-menu="SideBar">
         <a href="#" class="item-link">
-          <ion-icon name="mail-outline"></ion-icon>
+          Sidebar<br/>
+          Menu
         </a>
       </li>
       <li class="list-item" style="--i: 4" data-menu="Filter">
         <a href="#" class="item-link">
-          <ion-icon name="key-outline"></ion-icon>
+          Filter
         </a>
       </li>
       <li class="list-item" style="--i: 5" data-menu="Slide">
         <a href="#" class="item-link">
-          <ion-icon name="videocam-outline"></ion-icon>
+          Slide
         </a>
       </li>
       <li class="list-item" style="--i: 6" data-menu="Parallax">
         <a href="#" class="item-link">
-          <ion-icon name="camera-outline"></ion-icon>
+          Parallax
         </a>
       </li>
     </ul>
