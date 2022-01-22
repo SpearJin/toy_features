@@ -6,6 +6,7 @@ import SideBar from '../04. sidebarMenu/main.js';
 import Filter from '../05. filter/main.js';
 import Slide from '../06. slide/main.js';
 import Parallax from '../07. parallax/main.js';
+import MovrMenu from '../09. moveMenu/main.js';
 
 const $menu = document.createElement('div');
 $menu.className = 'menu';
@@ -67,24 +68,31 @@ $menu.querySelector('.list').addEventListener('click', (e) => {
 
   switch (target.dataset.menu) {
     case 'Stepper':
+      Stepper.append(MovrMenu);
       changePage(Stepper);
       return;
     case 'Navbar':
+      Navbar.append(MovrMenu);
       changePage(Navbar);
       return;
     case 'DropMenu':
+      DropMenu.append(MovrMenu);
       changePage(DropMenu);
       return;
     case 'SideBar':
+      SideBar.append(MovrMenu);
       changePage(SideBar);
       return;
     case 'Filter':
+      Filter.append(MovrMenu);
       changePage(Filter);
       return;
     case 'Slide':
+      Slide.append(MovrMenu);
       changePage(Slide);
       return;
     case 'Parallax':
+      Parallax.append(MovrMenu);
       changePage(Parallax);
       return;
   }
