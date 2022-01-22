@@ -61,6 +61,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  pointer-events: none;
   transition: 0.5s;
   transform-origin: 20vw;
   transition-delay: calc(0.1s * var(--i));
@@ -70,6 +71,7 @@ body {
 .menu.active .list-item {
   top: 35%;
   left: 10%;
+  pointer-events: unset;
   transform: rotate(calc(360deg / 7 * var(--i)));
 }
 

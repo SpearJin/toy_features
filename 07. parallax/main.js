@@ -3,16 +3,15 @@
 const $parallax = document.createElement('div');
 $parallax.className = 'parallax';
 $parallax.innerHTML = `
-  <header>
-    <a href="#" class="logo">Logo</a>
-    <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+  <header class="header">
+    <ul class="parallax_list">
+      <li class="parallax_list-item"><a href="#" class="active">Home</a></li>
+      <li class="parallax_list-item"><a href="#">About</a></li>
+      <li class="parallax_list-item"><a href="#">Work</a></li>
+      <li class="parallax_list-item"><a href="#">Contact</a></li>
     </ul>
   </header>
-  <section>
+  <section class="section">
     <img src="../07. parallax/image/stars.png" class="stars" />
     <img src="../07. parallax/image/moon.png" class="moon" />
     <img src="../07. parallax/image/mountains_behind.png" class="mountains_behind" />
