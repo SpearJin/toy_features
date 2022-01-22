@@ -31,7 +31,7 @@ $gallery.innerHTML = `
 
     <ul class="photos">
       <li class="photo" data-type="rhino">
-        <img class="photo_img" src="../src/05. filter/image/ele.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/ele.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">코끼리</h3>
           <p class="photo_inner-description">
@@ -42,7 +42,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="tiger">
-        <img class="photo_img" src="../src/05. filter/image/tiger2.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/tiger2.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">호랑이</h3>
           <p class="photo_inner-description">
@@ -52,7 +52,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="horse">
-        <img class="photo_img" src="../src/05. filter/image/horse.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/horse.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">말</h3>
           <p class="photo_inner-description">
@@ -63,7 +63,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="lion">
-        <img class="photo_img" src="../src/05. filter/image/lion.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/lion.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">사자</h3>
           <p class="photo_inner-description">
@@ -73,7 +73,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="rhino">
-        <img class="photo_img" src="../src/05. filter/image/rhino.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/rhino.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">코뿔소</h3>
           <p class="photo_inner-description">
@@ -85,7 +85,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="tiger">
-        <img class="photo_img" src="../src/05. filter/image/tiger.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/tiger.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">호랑이</h3>
           <p class="photo_inner-description">
@@ -95,7 +95,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="lion">
-        <img class="photo_img" src="../src/05. filter/image/lion2.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/lion2.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">사자</h3>
           <p class="photo_inner-description">
@@ -105,7 +105,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="horse">
-        <img class="photo_img" src="../src/05. filter/image/horse2.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/horse2.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">말</h3>
           <p class="photo_inner-description">
@@ -116,7 +116,7 @@ $gallery.innerHTML = `
         <div class="description"></div>
       </li>
       <li class="photo" data-type="rhino">
-        <img class="photo_img" src="../src/05. filter/image/rhino2.jpg" alt="photo" />
+        <img class="photo_img" src="./src/05. filter/image/rhino2.jpg" alt="photo" />
         <div class="photo_inner">
           <h3 class="photo_inner-title">코뿔소</h3>
           <p class="photo_inner-description">

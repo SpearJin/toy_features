@@ -12,12 +12,12 @@ $parallax.innerHTML = `
     </ul>
   </header>
   <section class="section">
-    <img src="../src/07. parallax/image/stars.png" class="stars" />
-    <img src="../src/07. parallax/image/moon.png" class="moon" />
-    <img src="../src/07. parallax/image/mountains_behind.png" class="mountains_behind" />
+    <img src="./src/07. parallax/image/stars.png" class="stars" />
+    <img src="./src/07. parallax/image/moon.png" class="moon" />
+    <img src="./src/07. parallax/image/mountains_behind.png" class="mountains_behind" />
     <h2 class="text">Moon Light</h2>
     <a class="parallax_btn">설명</a>
-    <img src="../src/07. parallax/image/mountains_front.png" class="mountains_front" />
+    <img src="./src/07. parallax/image/mountains_front.png" class="mountains_front" />
   </section>
   <div class="sec" class="sec">
   <h2 class="parallax_description_title">Parallax Scrolling Effects</h2>
