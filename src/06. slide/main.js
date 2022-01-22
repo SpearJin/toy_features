@@ -55,7 +55,7 @@ function createCard() {
     card.setAttribute('class', 'slide_card');
     card.setAttribute('style', `--i:${index}`);
     card.innerHTML = `
-        <img class="slide_card-img img${index + 1}" src="../06. slide/image/${img}.jpeg" alt="image" />
+        <img class="slide_card-img img${index + 1}" src="../src/06. slide/image/${img}.jpeg" alt="image" />
       `;
     $slideCards.appendChild(card);
   });
