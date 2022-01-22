@@ -25,6 +25,8 @@
 }
 
 .dropMenu {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
   margin: auto;
@@ -34,7 +36,6 @@
   width: 80%;
   height: 40px;
   padding: 8px;
-  margin-left: 25px;
   border: 1px solid lightgrey;
   border-radius: 4px;
   background-color: #fff;

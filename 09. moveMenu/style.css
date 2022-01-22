@@ -15,3 +15,7 @@
   cursor: pointer;
   outline: 0;
 }
+
+.move_menu_btn:hover {
+  opacity: 0.8;
+}
